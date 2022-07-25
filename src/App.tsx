@@ -63,6 +63,9 @@ export default function App() {
         // Add version to query if it doesn't exist
         const id = prepareId(query);
 
+        // If the query is already set, don't fetch again
+        if (data && data.set_num === id) return;
+
         const getSetUrl = (query: string) => `https://rebrickable.com/api/v3/lego/sets/${query}/`;
         const getThemeUrl = (query: string) => `https://rebrickable.com/api/v3/lego/themes/${query}/`;
 
