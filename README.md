@@ -10,7 +10,7 @@ yarn install # or npm install
 
 ## Environment Variables
 
-Get an API key from [Rebrickable](https://rebrickable.com), add it to `.env.example`, then rename the file to `.env`.
+Get an API key from [Rebrickable](https://rebrickable.com/api/), add it to `.env.example`, then rename the file to `.env`.
 
 ## Build and Run
 
